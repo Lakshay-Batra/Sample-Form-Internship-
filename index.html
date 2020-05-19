@@ -13,7 +13,7 @@
             background-image: -webkit-linear-gradient(65deg,rgb(14, 122, 136),white);
         }
         .top-container {
-            height:500px;
+            height:600px;
         }
         .header {
             background-color: #11999e;
@@ -52,6 +52,12 @@
         <div>
             <h1 class="header mx-5 py-2 font-weight-bold">मजदूर/कारीगर के लिए</h1>
             <button type="button" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#staticBackdropHire">
+                क्लिक करें
+            </button>
+        </div>
+        <div>
+            <h1 class="header mx-5 py-2 font-weight-bold">समिति का सदस्य बनने के लिए</h1>
+            <button type="button" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#staticBackdropMember">
                 क्लिक करें
             </button>
         </div>
@@ -133,7 +139,7 @@
                             </div>
                         </div>
                         <br>
-                        <label for="">किस क्षेत्र मे प्रशिक्षण प्राप्त करना चाहते हैं(विवरण दे)</label>
+                        <label for="">किस क्षेत्र मे कार्य किया है(पूरा विवरण दे)</label>
                         <textarea class="form-control" name="" id="" rows="5"></textarea>
                     </div>
                     <div class="modal-footer">
@@ -321,6 +327,104 @@
             </div>
         </div>
     </div>
+
+    <!------------------------------------------ Member ------------------------------------->
+
+    <div class="modal fade" id="staticBackdropMember" data-backdrop="static" data-keyboard="false" tabindex="-1"
+    role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">समिति का सदस्य बनने के लिए नीच दिए गए फॉर्म को भरे</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form action="">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="">पूरा नाम</label>
+                        <input type="text" class="form-control" placeholder="अपना नाम दर्ज करें">
+                    </div>
+                    <br>
+                    <div class="d-flex justify-content-between form-group">
+                        <div>
+                            <label for="">आधार संख्या</label>
+                            <input type="text" class="form-control" placeholder="आधार संख्या">
+                        </div>
+                        <div>
+                            <label for="">मोबाइल नंबर</label>
+                            <input type="text" class="form-control" placeholder="मोबाइल नंबर">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="">जन्म तिथि</label>
+                        <input type="date" class="form-control" placeholder="जन्म तिथि">
+                    </div>
+                    <br>
+                    <div class="form-group row">
+                        <div class="col-md-4">
+                            <label for="">ग्राम</label>
+                            <input type="text" class="form-control" placeholder="ग्राम">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="">पोस्ट</label>
+                            <input type="text" class="form-control" placeholder="पोस्ट">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="">थानाा</label>
+                            <input type="text" class="form-control" placeholder="थानाा">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group row">
+                        <div class="col-md-4">
+                            <label for="">प्रखंड</label>
+                            <input type="text" class="form-control" placeholder="प्रखंड">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="">जिला</label>
+                            <input type="text" class="form-control" placeholder="जिला">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="">शहर</label>
+                            <input type="text" class="form-control" placeholder="शहर">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <label for="">पिनकोड</label>
+                            <input type="text" class="form-control" placeholder="पिनकोड">
+                        </div>
+                        <div>
+                            <label for="">राज्य</label>
+                            <input type="text" class="form-control" placeholder="राज्य">
+                        </div>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="">आप किस स्तर के सदस्य बनना चाहते हैं</label>
+                        <select class="form-control" name="" id="">
+                            <option value="">चुनाव करें</option>
+                            <option value="जिला">जिला</option>
+                            <option value="प्रखंड">प्रखंड</option>
+                            <option value="जिला">जिला</option>
+                        </select>
+                    </div>
+                    <br>
+                    <label for="">आप समिति का सदस्य क्यों बनना चाहते हैं, लिखें।</label>
+                    <textarea class="form-control" name="" id="" rows="5"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">क्लोस</button>
+                    <button type="button" class="btn btn-primary">रजिस्टर करें</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 
 
